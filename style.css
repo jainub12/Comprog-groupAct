@@ -41,7 +41,7 @@ nav .links a:hover {
 
 /* Hero */
 .hero {
-  background: linear-gradient(135deg, #ff6ec7, #4facfe);
+  background: linear-gradient(135deg, black, white);
   color: white;
   text-align: center;
   padding: 100px 20px;
