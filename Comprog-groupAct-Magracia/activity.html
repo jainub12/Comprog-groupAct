@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Internal CSS -->
+  <style>
+    body {
+      font-family: Arial, Verdana, "Times New Roman";
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: rgb(50, 50, 50);
+    }
+
+    header {
+    padding: 20px;
+      text-shadow: 2px 2px 4px black;
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      text-transform: uppercase;
+      margin: 0 15px;
+      font-weight: bold;
+      color: white;
+    }
+
+    section {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: left;
+      font-variant: small-caps;
+    }
+
+    p {
+      text-align: justify;
+      font-style: italic; 
+    }
+
+    footer {
+      text-align: right;
+      background: #2c3e50;
+      color: white;
+      padding: 10px;
+    }
+
+    .skills-list {
+      display: grid;
+      grid-template-columns: 
+      repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .skill {
+      background: white;
+      padding: 10px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1 id="main-title">My Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#activity">Activities</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hello! My name is <span style="color: blue; font-weight: bold;">Darence Magracia</span> 
+      <!-- Inline CSS --> and I am a senior highschool student and an STI'er. 
+      I love watching animes and I am good at 
+      <span style="background: yellow;">problem-solving.</span> I also learned how to use 
+      Java, HTML and CSS thanks to my teacher.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <div class="skill">HTML & CSS</div>
+      <div class="skill">Java Basics</div>
+      <div class="skill">Problem Solving</div>
+      <div class="skill">Teamwork</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="activity">
+    <h2>My Activities: </h2>
+    <div class="card">
+      <h3>Personal Website</h3>
+      <p>A simple responsive webpage made with HTML & CSS.</p>
+    </div>
+    <div class="card">
+      <h3>My Portfolio</h3>
+      <p>This is my first portfolio in a webpage and its made with HTML and improved by CSS.</p>
+    </div>
+  </section>
+
+  <!--Contact Section-->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:example@gmail.com">example@gmail.com</a></p>
+  </section>
+
+  <!--Footer-->
+  <footer>
+    <p>&copy; 2025 Darence D. Magracia | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
