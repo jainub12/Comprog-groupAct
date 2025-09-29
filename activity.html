@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Example Page</title>
 
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+
+        #main-title {
+            color: teal;
+            font-size: 36px;
+            text-align: center;
+            text-shadow: 2px 2px 5px gray;
+        }
+
+        .highlight {
+            background-color: yellow;
+            font-style: italic;
+        }
+
+        .description {
+            font-family: 'Georgia', serif;
+            font-size: 18px;
+            font-variant: small-caps;
+            text-align: justify;
+        }
+
+        .note {
+            color: #555;
+            text-align: right;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="main-title">Welcome to My CSS Example Page</h1>
+
+    <p class="description">
+        This is a <span style="color: red; font-weight: bold;">sample paragraph</span> that demonstrates
+        <span class="highlight">inline CSS</span> and other font properties. We are using different fonts,
+        sizes, styles, and alignments in this document.
+    </p>
+
+    <p class="note">This note is aligned to the right and uses a monospace font.</p>
+
+    <p class="footer">This is a footer with uppercase text and underlined decoration.</p>
+
+</body>
+</html>
+
+}
