@@ -56,17 +56,35 @@
       color: white;
       padding: 10px;
     }
+
+    .skills-list {
+      display: grid;
+      grid-template-columns: 
+      repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .skill {
+      background: white;
+      padding: 10px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
 
   <!-- Header -->
   <header>
-    <h1 id="main-title">My Profile</h1>
+    <h1 id="main-title">My Portfolio</h1>
     <nav>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
+      <a href="#skills">Skills</a>
     </nav>
   </header>
 
@@ -82,12 +100,21 @@
     </p>
   </section>
 
+  <!--Skills Section-->
+  <section id="skills">
+    <h2>My Skills: </h2>
+  </section>
+
   <!-- Projects Section -->
   <section id="projects">
     <h2>My New Activity: </h2>
     <div class="card">
       <h3>Personal Website</h3>
       <p>A simple responsive webpage made with HTML & CSS.</p>
+    </div>
+    <div class="card">
+      <h3>My Portfolio</h3>
+      <p>This is my first portfolio in a webpage and its made with HTML and improved by CSS.</p>
     </div>
   </section>
 
