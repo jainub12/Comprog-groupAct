@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pierre Xavier - Terminal RGB Galaxy</title>
+
+    <!-- Internal CSS -->
+    <style>
+        /* Animated galaxy background */
+        @keyframes galaxyBG {
+            0% {background-color: rgb(72, 118, 255);} /* astronaut blue */
+            50% {background-color: rgb(25, 25, 112);} /* navy blue */
+            100% {background-color: rgb(72, 118, 255);}
+        }
+
+        body {
+            animation: galaxyBG 20s infinite alternate;
+            color: rgb(0,255,65); /* neon green text */
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 0;
+            transition: background-color 2s;
+        }
+
+        /* Header */
+        #header {
+            background-color: rgba(17,20,31,0.8);
+            text-align: center;
+            padding: 30px;
+            border-bottom: 2px solid rgb(0,255,65);
+            text-shadow: 0 0 5px rgb(0,255,65);
+        }
+
+        #header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        #header p {
+            font-size: 18px;
+            margin: 5px 0 0 0;
+            color: rgb(0,204,51);
+        }
+
+        /* Navigation */
+        nav {
+            background-color: rgba(17,20,31,0.9);
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid rgb(0,255,65);
+        }
+
+        nav a {
+            color: rgb(0,255,65);
+            text-decoration: none;
+            padding: 15px 25px;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: rgb(0,255,65);
+            color: rgb(15,17,26);
+        }
+
+        /* Sections */
+        .section {
+            padding: 20px;
+            margin: 15px auto;
+            width: 90%;
+            background-color: rgba(17,20,31,0.8);
+            border: 1px solid rgb(0,255,65);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgb(0,255,65);
+        }
+
+        /* Headings */
+        h2 {
+            font-family: 'Courier New', monospace;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: left;
+            text-transform: uppercase;
+            color: rgb(0,255,65);
+            text-shadow: 0 0 5px rgb(0,255,65);
+        }
+
+        /* Paragraphs */
+        p {
+            font-size: 16px;
+            text-align: justify;
+        }
+
+        /* Highlight class */
+        .highlight {
+            color: rgb(255,0,255); /* neon pink */
+            text-decoration: underline;
+        }
+
+        /* Skill boxes */
+        .skill {
+            display: inline-block;
+            background-color: rgb(0,0,0);
+            color: rgb(0,255,65);
+            padding: 8px 12px;
+            margin: 5px;
+            border: 1px solid rgb(0,255,65);
+            border-radius: 4px;
+            font-weight: bold;
+            text-shadow: 0 0 3px rgb(0,255,65);
+        }
+
+        /* Footer */
+        footer {
+            background-color: rgba(17,20,31,0.9);
+            color: rgb(0,255,65);
+            text-align: center;
+            padding: 15px;
+            border-top: 2px solid rgb(0,255,65);
+            text-shadow: 0 0 5px rgb(0,255,65);
+        }
+    </style>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <h1>Pierre Xavier C Icamina</h1>
+        <p>Student & Aspiring Web Developer</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>Hello! I am Pierre Xavier C Icamina from MAWD 102. I am a student who is still exploring ways to learn coding and web development. I enjoy discovering new technologies and building projects that enhance my skills. I am passionate about learning and continuously improving myself in programming, design, and problem-solving.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>My Skills</h2>
+        <p>Here are some of my current skills:</p>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">React</div>
+        <div class="skill">Problem Solving</div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+        <h2>My Achievements</h2>
+        <ul>
+            <li>Learned full basics of HTML, CSS, and JavaScript</li>
+            <li>Built multiple personal projects and practice websites</li>
+            <li>Explored frameworks like React for web development</li>
+            <li>Developed problem-solving and logical thinking skills</li>
+            <li>Continuously learning new coding techniques and best practices</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p>Reach out at <span style="color: rgb(255,0,255);">pierrexavier@example.com</span> or connect with me on social media for updates and projects.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Pierre Xavier C Icamina. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
