@@ -1,61 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>CSS Example Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talavera's Portfolio'</title>
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="styles.css">
+  <!-- Internal CSS -->
+  <style>
+    body {
+      font-family: Arial, Verdana, "Times New Roman";
+      margin: 0;
+      padding: 0;
+      background-color: #FFFFFF;
+      color: rgb(54, 69, 79);
+      
+    }
 
-    <!-- Internal CSS -->
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            margin: 20px;
-        }
+    header {
+    padding: 20px;
+      text-shadow: 2px 2px 4px black;
+      background: #FF5F6D;
+      color: white;
+      text-align: center;
+    }
 
-        #main-title {
-            color: teal;
-            font-size: 36px;
-            text-align: center;
-            text-shadow: 2px 2px 5px gray;
-        }
+    nav a {
+      text-decoration: none;
+      text-transform: uppercase;
+      margin: 0 15px;
+      font-weight: bold;
+      color: white;
+    }
 
-        .highlight {
-            background-color: yellow;
-            font-style: italic;
-        }
+    section {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
 
-        .description {
-            font-family: 'Georgia', serif;
-            font-size: 18px;
-            font-variant: small-caps;
-            text-align: justify;
-        }
+    h2 {
+      text-align: left;
+      font-variant: small-caps;
+    }
 
-        .note {
-            color: #555;
-            text-align: right;
-            font-family: 'Courier New', monospace;
-        }
-    </style>
+    p {
+      text-align: justify;
+      font-style: italic; 
+    }
+
+    footer {
+      text-align: right;
+      background: #2c3e50;
+      color: white;
+      padding: 10px;
+    }
+  </style>
 </head>
 <body>
 
-    <h1 id="main-title">Welcome to My CSS Example Page</h1>
+  <!-- Header -->
+  <header>
+    <h1 id="main-title">My Profile</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+    </nav>
+  </header>
 
-    <p class="description">
-        This is a <span style="color: red; font-weight: bold;">sample paragraph</span> that demonstrates
-        <span class="highlight">inline CSS</span> and other font properties. We are using different fonts,
-        sizes, styles, and alignments in this document.
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Highhh! My name isss <span style="color: red; font-weight: bold;">Amber Talavera</span> 
+      <!-- Inline CSS --> and I am an STI'er. 
+      I love watching random videos even though I have short attention span, I also love 
+      <span style="background: yellow;">cycling.</span> and I also want to really learn to code 
+      beacuse I can't catch up enough, I'm just a slow learner.
     </p>
+  </section>
 
-    <p class="note">This note is aligned to the right and uses a monospace font.</p>
-
-    <p class="footer">This is a footer with uppercase text and underlined decoration.</p>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My New Activity: </h2>
+    <div class="card">
+      <h3>Personal Website</h3>
+      <p>A simple responsive webpage made with HTML & CSS.</p>
+    </div>
 
 </body>
 </html>
-
-}
